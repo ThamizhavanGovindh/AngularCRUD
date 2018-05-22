@@ -1,0 +1,30 @@
+
+<p>
+  add-employee works!
+</p>
+<div>
+    <!-- add-employee works! {{myname}}
+    Welcome to City: {{newCity}} -->
+    <h2 class="text-center">Add Employee</h2>
+  <form>      
+        <div><label for="employee_Id">Employee ID:</label>
+        <input [(ngModel)]="employeemodel.employee_Id" name="employee_Id"></div><br>
+       <div> <label for="emplyeeName">Name:</label>
+        <input [(ngModel)]="employeemodel.emplyeeName" name="emplyeeName"></div><br>
+        <label for="gender">Gender:</label>
+        <input [(ngModel)]="employeemodel.gender" name="emplyeeName"><br>
+        <label for="mobileNumber">Mobile Number:</label>
+        <input [(ngModel)]="employeemodel.mobileNumber" name="emplyeeName"><br>
+        <label for="emailId">Address:</label>
+        <input [(ngModel)]="employeemodel.emailId" name="emailId"><br>
+        <label for="designation">Designation:</label>
+        <input type="email" [(ngModel)]="employeemodel.designation" name="designation"><br>
+        <label for="address">Address:</label>
+        <input [(ngModel)]="employeemodel.address" name="address"><br>
+      <label for="qualification">Qualification:</label>
+      <input [(ngModel)]="employeemodel.qualification" name="qualification"><br>
+      <label for="userType">Password:</label>
+      <input type="password" [(ngModel)]="employeemodel.password" name="password"><br>     
+    <button (click)="addEmployee()">ADD EMPLOYEE</button>
+  </form>
+  </div>

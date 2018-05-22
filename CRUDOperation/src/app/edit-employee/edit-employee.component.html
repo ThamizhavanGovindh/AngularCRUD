@@ -1,0 +1,24 @@
+  <div>
+      <h2>Update Employee</h2>
+    <form>      
+          <div><label for="employee_Id">Employee ID:</label>
+          <input [(ngModel)]="employeemodel.employee_Id" name="employee_Id"></div><br>
+         <div> <label for="emplyeeName">Name:</label>
+          <input [(ngModel)]="employeemodel.emplyeeName" name="emplyeeName"></div><br>
+          <div><label for="gender">Gender:</label>
+          <input [(ngModel)]="employeemodel.gender" name="emplyeeName"></div><br>
+          <div><label for="mobileNumber">Mobile Number:</label>
+          <input [(ngModel)]="employeemodel.mobileNumber" name="emplyeeName"></div><br>
+          <div><label for="emailId">Email Id:</label>
+          <input [(ngModel)]="employeemodel.emailId" name="emailId"></div><br>
+          <div><label for="designation">Designation:</label>
+          <input type="email" [(ngModel)]="employeemodel.designation" name="designation"></div><br>
+          <div><label for="address">Address:</label>
+          <input [(ngModel)]="employeemodel.address" name="address"></div><br>
+        <div><label for="qualification">Qualification:</label>
+        <input [(ngModel)]="employeemodel.qualification" name="qualification"></div><br>
+        <div> <label for="userType">Password:</label>
+        <input type="password" [(ngModel)]="employeemodel.password" name="password"></div><br>     
+      <button (click)="editemployee()">Update</button>
+    </form>
+    </div>
